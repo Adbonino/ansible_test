@@ -1,4 +1,4 @@
----
+io---
 - name: Install and start apache
   hosts: all
   become: true
@@ -11,7 +11,7 @@
 
     - name: Create the index.html file
       ansible.builtin.template:
-        src: /root/index.html
+        src: /root/directorio/index.html
         dest: /var/www/html
 
     - name: Start the httpd service if needed
