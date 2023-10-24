@@ -7,7 +7,7 @@
     - name: Ensure the httpd package is intalled
       ansible.builtin.yum:
         name: httpd
-        State: present
+        state: present
 
     - name: Create the index.html file
       ansible.builtin.template:
