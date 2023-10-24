@@ -1,4 +1,4 @@
-io---
+---
 - name: Install and start apache
   hosts: all
   become: true
