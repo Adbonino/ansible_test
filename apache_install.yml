@@ -9,11 +9,6 @@
         name: httpd
         state: present
 
-    - name: Create the index.html file
-      ansible.builtin.template:
-        src: /files/index.html
-        dest: /var/www/html/index.html
-
     - name: Start the httpd service if needed
       ansible.builtin.service:
         name: httpd
