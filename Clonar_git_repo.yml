@@ -4,6 +4,12 @@
   become: true
 
   tasks:
+  - name: Ensure the httpd package is intalled
+      ansible.builtin.yum:
+        name: git
+        state: present
+
+  
   - name: Example clone of a single branch
     ansible.builtin.git:
       repo: https://github.com/Adbonino/ansible_test.git
