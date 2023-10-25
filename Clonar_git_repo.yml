@@ -1,6 +1,12 @@
-- name: Example clone of a single branch
-  ansible.builtin.git:
-    repo: https://github.com/ansible/ansible-examples.git
-    dest: /src/ansible-examples
-    single_branch: yes
-    version: master
+---
+- name: Install and start apache
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Example clone of a single branch
+    ansible.builtin.git:
+      repo: https://github.com/ansible/ansible-examples.git
+      dest: /src/ansible-examples
+      single_branch: yes
+      version: master
