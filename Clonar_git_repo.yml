@@ -6,7 +6,7 @@
   tasks:
   - name: Example clone of a single branch
     ansible.builtin.git:
-      repo: https://github.com/ansible/ansible-examples.git
-      dest: /src/ansible-examples
+      repo: https://github.com/Adbonino/ansible_test.git
+      dest: ./ansible-examples
       single_branch: yes
       version: master
