@@ -1,0 +1,11 @@
+---
+- name: Install and start apache
+  hosts: all
+  become: true
+
+  - name: Remove the apache package
+    ansible.builtin.yum:
+      name: httpd
+      state: absent
+
+  
