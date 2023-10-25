@@ -14,4 +14,4 @@
         repo: https://github.com/Adbonino/ansible_test.git
         dest: ./ansible-examples
         single_branch: yes
-        version: master
+        version: main
