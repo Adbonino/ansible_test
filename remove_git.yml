@@ -3,7 +3,8 @@
   hosts: all
   become: true
 
-  - name: Remove the apache package
-    ansible.builtin.yum:
-      name: git
-      state: absent
+  tasks:
+    - name: Remove the apache package
+      ansible.builtin.yum:
+        name: git
+        state: absent
