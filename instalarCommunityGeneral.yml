@@ -1,1 +1,8 @@
+- name: Install community.general collection in localhost
+  hosts: all
 
+  taks:
+  - name: Install collection community.network
+    community.general.ansible_galaxy_install:
+      type: collection
+      name: community.general
