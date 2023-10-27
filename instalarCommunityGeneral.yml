@@ -1,4 +1,4 @@
-- name: Install community.general collection in localhost
+- name: Install community general collection in localhost
   hosts: all
 
   taks:
